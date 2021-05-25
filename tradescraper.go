@@ -56,7 +56,6 @@ func getRecentBlock() []NFTTrade {
 		var input_data string = current_slice["input"].(string)
 		trackbool, output := decodeAIB(input_data)
 		if trackbool {
-			fmt.Println(input_data)
 			var transaction string
 			transaction = current_slice["from"].(string)
 			transaction += " => "
